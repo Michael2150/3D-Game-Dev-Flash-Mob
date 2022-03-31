@@ -26,7 +26,7 @@ public class Crowd : MonoBehaviour
     {
         transform.position = startPos;
     }
-
+    
     IEnumerator startAnim()
     {
         var time = Random.Range(minTime, maxTime);
@@ -45,4 +45,6 @@ public class Crowd : MonoBehaviour
         transform.rotation = startRot;
         StartCoroutine(startAnim());
     }
+
+    
 }
