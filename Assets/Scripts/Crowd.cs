@@ -19,6 +19,9 @@ public class Crowd : MonoBehaviour
         startPos = transform.position;
         startRot = transform.rotation;
 
+        if (!animator)
+            Destroy(gameObject);
+
         StartCoroutine(startAnim());
     }
 
